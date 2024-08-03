@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useFrame, useLoader, useThree } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
-import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader";
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import { MTLLoader } from "three/addons/loaders/MTLLoader.js";
 import { Group, Mesh, Vector2, Vector3, Raycaster } from "three";
 
 interface MarioProps {
