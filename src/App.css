@@ -37,3 +37,31 @@ span {
   padding: 10px;
   pointer-events: auto;
 }
+
+.github-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.github-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.github-icon:hover {
+  background-color: white;
+  color: #333;
+}
