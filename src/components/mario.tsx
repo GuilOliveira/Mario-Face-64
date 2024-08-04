@@ -31,13 +31,10 @@ function Mario({
 
   const { camera, size } = useThree();
 
-  const materials = useLoader(
-    MTLLoader,
-    "src/assets/Marios Head/mariohead.mtl"
-  );
+  const materials = useLoader(MTLLoader, "assets/Marios Head/mariohead.mtl");
   const obj = useLoader(
     OBJLoader,
-    "src/assets/Marios Head/mariohead.obj",
+    "assets/Marios Head/mariohead.obj",
     (loader) => {
       materials.preload();
       loader.setMaterials(materials);
@@ -45,11 +42,11 @@ function Mario({
   );
   const materialsClone = useLoader(
     MTLLoader,
-    "src/assets/Marios Head/mariohead2.mtl"
+    "assets/Marios Head/mariohead2.mtl"
   );
   const objClone = useLoader(
     OBJLoader,
-    "src/assets/Marios Head/mariohead2.obj",
+    "assets/Marios Head/mariohead2.obj",
     (loader) => {
       materialsClone.preload();
       loader.setMaterials(materialsClone);

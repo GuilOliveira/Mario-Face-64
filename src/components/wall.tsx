@@ -8,7 +8,7 @@ interface WallProps {
 }
 
 const Wall: React.FC<WallProps> = ({ position, size }) => {
-  const texture = useLoader(TextureLoader, "src/assets/texture.png");
+  const texture = useLoader(TextureLoader, "assets/texture.png");
 
   texture.wrapS = RepeatWrapping;
   texture.wrapT = RepeatWrapping;

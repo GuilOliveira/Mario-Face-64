@@ -49,7 +49,7 @@ function App() {
         className="github-icon"
       >
         <svg
-          xmlns="./assets/github.svg"
+          xmlns="vite.svg"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

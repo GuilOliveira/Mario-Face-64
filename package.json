@@ -1,9 +1,12 @@
 {
+  "homepage": "https://guiloliveira.github.io/Mario-Face-64/",
   "name": "mario-face-64",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -15,6 +18,7 @@
     "@mui/material": "^5.16.6",
     "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
+    "@types/node": "^22.1.0",
     "@types/three": "^0.167.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
